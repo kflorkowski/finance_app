@@ -1,0 +1,29 @@
+# Ignorowanie plików tymczasowych i backupów
+*~
+*.tmp
+*.bak
+
+# Ignorowanie plików kompilowanych i zależności
+*.class
+*.jar
+*.war
+*.exe
+node_modules/
+venv/
+
+# Ignorowanie plików konfiguracyjnych lokalnych
+.env
+*.config.local
+
+# Ignorowanie plików logów i pliki tymczasowe systemowe
+*.log
+*.swp
+.DS_Store
+
+# Ignorowanie katalogów wynikowych kompilacji i budowania
+build/
+dist/
+
+# Możliwe do dodania dodatkowe pliki poufne
+# hasła, klucze API, certyfikaty
+
