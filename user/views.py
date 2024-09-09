@@ -4,9 +4,10 @@ from .forms import UserRegisterForm, UserLoginForm
 from django.contrib.auth import authenticate, login, logout
 
 
+
 def welcome(request):
     '''
-    GET - Przekierowuje na strone powitalną z możliwością
+    GET - Wyświetla strone powitalną z możliwością
     zalogowania/zarejestrowania
     '''
     return render(request, 'welcome.html')
