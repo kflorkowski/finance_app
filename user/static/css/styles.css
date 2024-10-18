@@ -1,0 +1,40 @@
+/* Styl dla tytułu */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Styl dla przycisków */
+.navbar button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #d4d4d4;
+}
+
+/* Styl dla paska nawigacji */
+.navbar {
+    display: flex;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    align-items: center;
+}
+
+/* Dodatkowe style, aby przyciski miały określoną szerokość */
+.navbar .left-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar .right-buttons {
+    display: flex;
+    margin-left: auto;
+}
