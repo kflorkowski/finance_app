@@ -1,20 +1,23 @@
 {% extends "welcome.html" %}
 
 {% block content %}
-    <div class="container">
-        <h2>Login</h2>
-        <form method="POST">
+    <div class="log-window">
+        <h2 class="log-heading">Login</h2>
+        <form class="log-form" method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Login</button>
+            <div class="log-button-container">
+                <button class="log-button" type="submit">Login</button>
+            </div>
         </form>
-    </div>
-
-    {% if messages %}
+        {% if messages %}
         <ul class="messages">
             {% for message in messages %}
                 <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
             {% endfor %}
         </ul>
     {% endif %}
+    </div>
+
+    
 {% endblock %}

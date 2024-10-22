@@ -1,4 +1,4 @@
-/* Styl dla tytułu */
+/* Style for title*/
 .page-title {
     font-size: 24px;
     font-weight: bold;
@@ -6,7 +6,7 @@
     flex-grow: 1;
 }
 
-/* Styl dla przycisków */
+/* Style for buttons */
 .navbar button {
     padding: 10px 20px;
     margin: 0 5px;
@@ -19,7 +19,7 @@
     background-color: #d4d4d4;
 }
 
-/* Styl dla paska nawigacji */
+/* Style for navigating bar */
 .navbar {
     display: flex;
     background-color: #f1f1f1;
@@ -28,13 +28,50 @@
     align-items: center;
 }
 
-/* Dodatkowe style, aby przyciski miały określoną szerokość */
+/* Styles fo button placement */
 .navbar .left-buttons {
-    display: flex;
+    /* display: flex; */
     justify-content: flex-start;
 }
 
 .navbar .right-buttons {
-    display: flex;
+    /* display: flex; */
     margin-left: auto;
+}
+
+/* Style for login window */
+.log-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 280px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.log-window .log-form {
+    text-align: center;
+}
+
+/* Style for login heading */
+.log-window .log-heading {
+    text-align: center;
+    margin: 0;
+}
+
+/* Style for login button container */
+.log-button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Style for login button */
+.log-button {
+    margin-right: 10px;
 }
