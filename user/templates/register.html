@@ -1,11 +1,38 @@
 {% extends "welcome.html" %}
 {% block content %}
-    <div class="container">
-        <h2>Register</h2>
+    <div class="reg_window">
+        <h2 class="reg_heading">Register</h2>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Sign up</button>
+            <div class="reg_button_container">
+                <button class="reg_button" type="submit">Sign up</button>
+            </div>
         </form>
     </div>
 {% endblock %}
+
+
+{% comment %} {% extends "welcome.html" %}
+
+{% block content %}
+    <div class="log-window">
+        <h2 class="log-heading">Login</h2>
+        <form class="log-form" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="log-button-container">
+                <button class="log-button" type="submit">Login</button>
+            </div>
+        </form>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+
+    
+{% endblock %} {% endcomment %}

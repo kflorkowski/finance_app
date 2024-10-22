@@ -65,13 +65,46 @@
 }
 
 /* Style for login button container */
-.log-button-container {
+.log-window .log-button-container {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
 /* Style for login button */
-.log-button {
+.log-window .log-button {
+    margin-right: 10px;
+}
+
+/* Style for register window */
+.reg_window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center-align all content horizontally */
+    height: auto;
+    width: 700px;
+    margin: 50px auto;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Style for registration heading */
+.reg_window .reg_heading {
+    width: 100%; /* Ensure heading takes full width */
+    text-align: center; /* Center the text inside */
+    margin: 0;
+}
+
+/* Style for registration button container */
+.reg_window .reg_button_container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Style for registration button */
+.reg_window .reg_button {
     margin-right: 10px;
 }
